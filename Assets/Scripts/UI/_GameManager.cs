@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class _GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static _GameManager Instance;
     public int CurrentDay = 1;
     void Start()
     {
-        if(Instance == null){
+        if (Instance == null)
+        {
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
