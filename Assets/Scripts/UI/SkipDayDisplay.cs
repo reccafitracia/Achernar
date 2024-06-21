@@ -29,8 +29,8 @@ public class SkipDayDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SkipDayText.text = GameManager.Instance.CurrentDay.ToString();
-        if(GameManager.Instance.CurrentDay==30){
+        SkipDayText.text = _GameManager.Instance.CurrentDay.ToString();
+        if(_GameManager.Instance.CurrentDay==30){
            // skipDayText.gameObject.SetActive(false);
             SkipDayButton.gameObject.SetActive(false);
             Debug.Log("GameBerakhir");
