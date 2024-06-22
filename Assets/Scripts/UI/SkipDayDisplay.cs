@@ -8,6 +8,7 @@ public class SkipDayDisplay : MonoBehaviour
 {
     public TextMeshProUGUI SkipDayText;
     public Button SkipDayButton;
+    public Canvas EndGameOverlay;
     void Start()
     {
         // if (skipDayText == null)
@@ -29,10 +30,11 @@ public class SkipDayDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SkipDayText.text = _GameManager.Instance.CurrentDay.ToString();
-        if(_GameManager.Instance.CurrentDay==30){
+        SkipDayText.text = GameManagerUI.Instance.CurrentDay.ToString();
+        if(GameManagerUI.Instance.CurrentDay==7){
            // skipDayText.gameObject.SetActive(false);
             SkipDayButton.gameObject.SetActive(false);
+            EndGameOverlay.gameObject.SetActive(true);
             Debug.Log("GameBerakhir");
         }
 

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class _GameManager : MonoBehaviour
+public class GameManagerUI : MonoBehaviour
 {
-    public static _GameManager Instance;
+    public static GameManagerUI Instance;
     public int CurrentDay = 1;
     void Start()
     {
@@ -23,6 +23,11 @@ public class _GameManager : MonoBehaviour
     {
         CurrentDay++;
         Debug.Log("Current Day : " + CurrentDay);
+    }
+
+    public void ResetDay()
+    {
+        CurrentDay = 1;
     }
 
 }

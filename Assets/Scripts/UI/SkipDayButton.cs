@@ -13,6 +13,6 @@ public class SkipDayButton : MonoBehaviour
     // Update is called once per frame
     public void OnSkipDayPress()
     {
-        _GameManager.Instance.SkipDay();
+        GameManagerUI.Instance.SkipDay();
     }
 }

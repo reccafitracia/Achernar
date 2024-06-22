@@ -96,6 +96,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void OnBackToMainMenuPress()
     {
+        GameManagerUI.Instance.ResetDay();
         SceneManager.LoadScene(0);
     }
 }

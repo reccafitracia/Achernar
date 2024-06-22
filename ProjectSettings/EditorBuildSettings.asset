@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Puzzle/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Build/MainMenu.unity
     guid: e1ace34f44177fa4c915c25993f2f54f
@@ -20,9 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Build/Village.unity
     guid: b148418b0c3a1254099307b1147f56f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Build/River.unity
     guid: c4642e572479ef641a4d684aebaa20c2
+  - enabled: 1
+    path: Assets/Puzzle/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Build/Factory.unity
     guid: b01a20e401d86df41916cca99d93ca4c
