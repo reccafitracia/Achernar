@@ -15,7 +15,6 @@ public class Potion : MonoBehaviour
     private Vector2 targetPos;
 
     public bool isMoving;
-    internal object type;
 
     public Potion(int _x, int _y)
     {
