@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
@@ -39,3 +40,4 @@ public class CustPropertyDrawer : PropertyDrawer
 		return 18f * 10;
 	}
 }
+#endif
