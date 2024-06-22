@@ -1232,7 +1232,7 @@ MonoBehaviour:
   backgroundPanel: {fileID: 145260230}
   victoryPanel: {fileID: 1584864613}
   losePanel: {fileID: 1513553074}
-  goal: 50
+  goal: 60
   moves: 10
   points: 0
   isGameEnded: 0
