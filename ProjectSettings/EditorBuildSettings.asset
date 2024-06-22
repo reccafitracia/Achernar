@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Build/River.unity
     guid: c4642e572479ef641a4d684aebaa20c2
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Puzzle/Puzzle 1/Level/Level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/Build/Factory.unity
     guid: b01a20e401d86df41916cca99d93ca4c
   m_configObjects:
