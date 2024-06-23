@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 288192977}
-  dialogManager: {fileID: 0}
+  dialogManager: {fileID: 1840961526}
   dialogToShow:
   - speakerName: Henry
     dialogText: Selamat Pagi Pak Yoko saya ingin bertanya.
