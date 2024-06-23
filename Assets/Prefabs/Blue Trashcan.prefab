@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3026938582096597073}
   - component: {fileID: 87896268943173124}
   - component: {fileID: 417748002}
-  - component: {fileID: -5002525867135251056}
+  - component: {fileID: -397180681893460147}
   m_Layer: 0
-  m_Name: Purple Potion
+  m_Name: Blue Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1291347184, guid: 89fdea2d06baaa34db8f309092eaf29f, type: 3}
+  m_Sprite: {fileID: -1721342114, guid: ad6d6e0e4224a834b80abf7d0e1435eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 5930547338441292345}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1c183a475817a104294fd63627338227, type: 2}
+  m_Controller: {fileID: 9100000, guid: f5dd9eb6cb7026e4c902a3f5d4cf55e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -120,12 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63315151cf69ab4fa04e0003329da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionType: 2
+  potionType: 1
   xIndex: 0
   yIndex: 0
   isMatched: 0
   isMoving: 0
---- !u!61 &-5002525867135251056
+--- !u!61 &-397180681893460147
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 1.125}
+    oldSize: {x: 1.09, y: 1.32}
     newSize: {x: 0.8125, y: 1.125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

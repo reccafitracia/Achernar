@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 417748002}
   - component: {fileID: 2751135916102993523}
   m_Layer: 0
-  m_Name: Green Potion
+  m_Name: Green Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
