@@ -21,10 +21,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Build/River.unity
     guid: c4642e572479ef641a4d684aebaa20c2
   - enabled: 1
+    path: Assets/Scenes/Build/Factory.unity
+    guid: b01a20e401d86df41916cca99d93ca4c
+  - enabled: 1
     path: Assets/Puzzle/Puzzle 1/Scene/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Build/Factory.unity
-    guid: b01a20e401d86df41916cca99d93ca4c
+    path: Assets/Puzzle/Puzzle 1/Scene/Level 2.unity
+    guid: a75c25dfd84f44a47bb508d38bff6590
+  - enabled: 1
+    path: Assets/Puzzle/Puzzle 1/Scene/Level 3.unity
+    guid: 69a53167fbc880e468b4e77217196514
+  - enabled: 1
+    path: Assets/Puzzle/Puzzle 1/Scene/Level 4.unity
+    guid: 69543c3886a3cc043ad520ae6fe19eed
+  - enabled: 1
+    path: Assets/Puzzle/Puzzle 1/Scene/Level 5.unity
+    guid: 48d7e4c9eb23b6e40bac6889066d78fc
+  - enabled: 1
+    path: Assets/Puzzle/Puzzle 1/Scene/Level 6.unity
+    guid: 5a7ef828c342ac6419eb0658d4c1a477
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 231ea1148b16dbd44971470c807df07a, type: 2}
