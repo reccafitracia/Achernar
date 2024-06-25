@@ -18,9 +18,8 @@ public sealed class SingletonData
             return _instance;
         }
     }
-    public int CurrentDay { get; private set; } = 1;
 
-    //public int CurrentDay = 0;
+    public int CurrentDay { get; private set; } = 1;
 
     public void SkipDay()
     {

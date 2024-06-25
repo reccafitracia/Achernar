@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 118200506}
   - component: {fileID: 118200508}
   - component: {fileID: 118200507}
+  - component: {fileID: 118200509}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -363,6 +364,7 @@ MonoBehaviour:
   SkipDayButtonVar: {fileID: 1345978675}
   EndGameOverlay: {fileID: 2064853510}
   dayDisplay: {fileID: 118200508}
+  dayManager: {fileID: 118200509}
 --- !u!114 &118200508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +378,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayText: {fileID: 1892576489}
+--- !u!114 &118200509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118200503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7966732a7e481047ba6e4d1ce0d5720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayConfigurations:
+  - day: 1
+    objActive:
+    - {fileID: 1189671027}
+    objNonActive:
+    - {fileID: 974412946}
+    - {fileID: 236279357}
+  - day: 2
+    objActive:
+    - {fileID: 236279357}
+    - {fileID: 974412946}
+    objNonActive:
+    - {fileID: 1189671027}
+    - {fileID: 1111434488}
+  - day: 3
+    objActive:
+    - {fileID: 974412946}
+    objNonActive:
+    - {fileID: 1189671027}
+    - {fileID: 236279357}
+    - {fileID: 1111434488}
 --- !u!1 &132201972
 GameObject:
   m_ObjectHideFlags: 0
