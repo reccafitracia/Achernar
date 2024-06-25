@@ -23,19 +23,20 @@ public class DialogManager : MonoBehaviour
     public List<Button> dialogueButtons;
     private Dialog[] dialogs;
     private int currentDialogIndex;
+    private System.Action onDialogCompleteCallback;
 
     void Start()
     {
         continueButton.onClick.AddListener(DisplayNextSentence);
     }
 
-    public void StartDialog(Dialog[] dialogArray)
+    public void StartDialog(Dialog[] dialogArray, System.Action onDialogComplete = null)
     {
-
         SetButtonsActive(false);
 
         dialogs = dialogArray;
         currentDialogIndex = 0;
+        onDialogCompleteCallback = onDialogComplete;
         DisplayCurrentDialog();
     }
 
@@ -71,6 +72,7 @@ public class DialogManager : MonoBehaviour
         }
 
         SetButtonsActive(true);
+        onDialogCompleteCallback?.Invoke();
     }
 
     private void SetButtonsActive(bool isActive)
