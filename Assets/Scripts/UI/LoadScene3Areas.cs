@@ -17,7 +17,7 @@ public class LoadScene3Areas : MonoBehaviour
 
     public void OnFactoryPress()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     public void OnBackToMap()
