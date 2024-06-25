@@ -435,8 +435,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue>>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
-  m_sharedMaterial: {fileID: -8004207171879855081, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
+  m_sharedMaterial: {fileID: 8561185768347816886, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3629,6 +3629,9 @@ MonoBehaviour:
   dialogText: {fileID: 1547067123}
   continueButton: {fileID: 1770612979}
   DialogBox: {fileID: 1111434488}
+  objActive:
+  - {fileID: 2099288120}
+  dialogueButtons: []
 --- !u!4 &1065533793
 Transform:
   m_ObjectHideFlags: 0
@@ -4836,8 +4839,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
-  m_sharedMaterial: {fileID: -8004207171879855081, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
+  m_sharedMaterial: {fileID: 8561185768347816886, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11188,8 +11191,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: adadadadad
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
-  m_sharedMaterial: {fileID: -8004207171879855081, guid: 2adc182ee07f3db42a1166eb19c64fcf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
+  m_sharedMaterial: {fileID: 8561185768347816886, guid: a20807f62aa04ae45aed233db95d67c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

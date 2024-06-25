@@ -19,6 +19,8 @@ public class DialogManager : MonoBehaviour
     public Button continueButton;
     public GameObject DialogBox;
 
+    public List<GameObject> objActive;
+    public List<Button> dialogueButtons;
     private Dialog[] dialogs;
     private int currentDialogIndex;
 
@@ -29,6 +31,9 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(Dialog[] dialogArray)
     {
+
+        SetButtonsActive(false);
+
         dialogs = dialogArray;
         currentDialogIndex = 0;
         DisplayCurrentDialog();
@@ -59,5 +64,20 @@ public class DialogManager : MonoBehaviour
         DialogBox.SetActive(false);
         speakerNameText.text = "";
         dialogText.text = "";
+
+        foreach (var obj in objActive)
+        {
+            obj.SetActive(false);
+        }
+
+        SetButtonsActive(true);
+    }
+
+    private void SetButtonsActive(bool isActive)
+    {
+        foreach (var button in dialogueButtons)
+        {
+            button.gameObject.SetActive(isActive);
+        }
     }
 }

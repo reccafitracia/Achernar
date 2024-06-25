@@ -2076,6 +2076,10 @@ MonoBehaviour:
   dialogText: {fileID: 845683353}
   continueButton: {fileID: 1377126024}
   DialogBox: {fileID: 1761293793}
+  objectsToDeactivateOnEnd: []
+  dialogueButtons:
+  - {fileID: 1529745400}
+  - {fileID: 288192977}
 --- !u!4 &1840961527
 Transform:
   m_ObjectHideFlags: 0
