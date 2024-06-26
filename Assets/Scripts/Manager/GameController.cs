@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        //int currentDialogCount = DialogCompletionCounter.GetDialogCount();
         if (dayDisplay == null)
         {
             return;
@@ -24,6 +25,17 @@ public class GameController : MonoBehaviour
         dayDisplay.UpdateDayDisplay();
     }
 
+    void Update()
+    {
+        if(DialogCompletionCounter.GetDialogCount() < 5)
+        {
+            SkipDayButtonVar.SetActive(false);
+        }
+        else
+        {
+            SkipDayButtonVar.SetActive(true);
+        }
+    }
     public void OnSkipDayButtonPressed()
     {
         if (SingletonData.Instance == null)
@@ -34,6 +46,7 @@ public class GameController : MonoBehaviour
         SingletonData.Instance.SkipDay();
         dayDisplay.UpdateDayDisplay();
         dayManager.UpdateDayObjects();
+        DialogCompletionCounter.ResetDialogCounter();
 
         if (SingletonData.Instance.CurrentDay >= 4)
         {
@@ -63,7 +76,8 @@ public class GameController : MonoBehaviour
         {
             return;
         }
-
+        DialogCompletionCounter.ResetDialogCounter();
+        PuzzleData.ResetCurrentWin();
         SingletonData.Instance.ResetDay();
         dayDisplay.UpdateDayDisplay();
     }

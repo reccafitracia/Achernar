@@ -14,13 +14,16 @@ public class Dialog
 
 public class DialogManager : MonoBehaviour
 {
+   
     public TMP_Text speakerNameText;
     public TMP_Text dialogText;
     public Button continueButton;
     public GameObject DialogBox;
 
     public List<GameObject> objActive;
+    public List<GameObject> objNonActive;
     public List<Button> dialogueButtons;
+
     private Dialog[] dialogs;
     private int currentDialogIndex;
     private System.Action onDialogCompleteCallback;
@@ -66,9 +69,16 @@ public class DialogManager : MonoBehaviour
         speakerNameText.text = "";
         dialogText.text = "";
 
+        // Set objActive to false
         foreach (var obj in objActive)
         {
             obj.SetActive(false);
+        }
+
+        // Set objNonActive to true
+        foreach (var obj in objNonActive)
+        {
+            obj.SetActive(true);
         }
 
         SetButtonsActive(true);
