@@ -22,6 +22,9 @@ public class DialogButton : MonoBehaviour
 
     void OnDialogComplete()
     {
+        // Increment the dialog completion counter
+        DialogCompletionCounter.IncrementDialogCount();
+
         foreach (var obj in objActive)
         {
             obj.SetActive(true);
