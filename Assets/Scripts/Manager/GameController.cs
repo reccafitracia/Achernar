@@ -27,13 +27,38 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if(DialogCompletionCounter.GetDialogCount() < 5)
+        if(SingletonData.Instance.CurrentDay==1)
         {
-            SkipDayButtonVar.SetActive(false);
+            if(DialogCompletionCounter.GetDialogCount() < 5)
+            {
+                SkipDayButtonVar.SetActive(false);
+            }
+            else
+            {
+                SkipDayButtonVar.SetActive(true);
+            }
         }
-        else
+          if(SingletonData.Instance.CurrentDay==2)
         {
-            SkipDayButtonVar.SetActive(true);
+            if(DialogCompletionCounter.GetDialogCount() < 3 && PuzzleData.CurrentWin<3)
+            {
+                SkipDayButtonVar.SetActive(false);
+            }
+            else
+            {
+                SkipDayButtonVar.SetActive(true);
+            }
+        }
+          if(SingletonData.Instance.CurrentDay==3)
+        {
+            if(DialogCompletionCounter.GetDialogCount() < 1)
+            {
+                SkipDayButtonVar.SetActive(false);
+            }
+            else
+            {
+                SkipDayButtonVar.SetActive(true);
+            }
         }
     }
     public void OnSkipDayButtonPressed()
