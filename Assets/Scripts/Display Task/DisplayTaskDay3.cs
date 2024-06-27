@@ -18,7 +18,7 @@ public class DisplayTaskDay3 : MonoBehaviour
     {
         UpdateDisplayText();
 
-        if(DialogCompletionCounter.dialogCount>=3 && PuzzleData.CurrentWin>=3)
+        if(DialogCompletionCounter.dialogCount>=1)
         {
             foreach (var obj in objActive)
             {

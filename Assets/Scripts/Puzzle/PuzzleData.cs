@@ -1,8 +1,6 @@
 public static class PuzzleData
 {
-    public static int PointPuzz { get; set; }
-    public static int GoalPuzz { get; set; }
-    public static int CurrentWin { get; set; }
+    public static int CurrentWin = 0;
 
     public static void IncrementCurrentWin()
     {

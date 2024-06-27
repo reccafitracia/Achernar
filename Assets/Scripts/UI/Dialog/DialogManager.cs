@@ -14,7 +14,6 @@ public class Dialog
 
 public class DialogManager : MonoBehaviour
 {
-   
     public TMP_Text speakerNameText;
     public TMP_Text dialogText;
     public Button continueButton;
@@ -61,6 +60,9 @@ public class DialogManager : MonoBehaviour
         DialogBox.SetActive(true);
         speakerNameText.text = dialogs[currentDialogIndex].speakerName;
         dialogText.text = dialogs[currentDialogIndex].dialogText;
+
+        // Force the layout to update to fit the text
+        LayoutRebuilder.ForceRebuildLayoutImmediate(DialogBox.GetComponent<RectTransform>());
     }
 
     void EndDialog()

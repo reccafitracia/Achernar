@@ -64,7 +64,6 @@ public class GameManager : MonoBehaviour
             isGameEnded = true;
             backgroundPanel.SetActive(true);
             losePanel.SetActive(true);
-            PuzzleData.IncrementCurrentWin();
             PotionBoard.Instance.potionParent.SetActive(false);
             return;
         }
