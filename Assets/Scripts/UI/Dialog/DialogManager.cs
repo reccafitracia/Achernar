@@ -60,8 +60,6 @@ public class DialogManager : MonoBehaviour
         DialogBox.SetActive(true);
         speakerNameText.text = dialogs[currentDialogIndex].speakerName;
         dialogText.text = dialogs[currentDialogIndex].dialogText;
-
-        // Force the layout to update to fit the text
         LayoutRebuilder.ForceRebuildLayoutImmediate(DialogBox.GetComponent<RectTransform>());
     }
 
