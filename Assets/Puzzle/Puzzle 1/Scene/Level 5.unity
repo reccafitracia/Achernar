@@ -1158,9 +1158,9 @@ MonoBehaviour:
   moves: 120
   points: 0
   isGameEnded: 0
-  pointsTxt: {fileID: 0}
-  movesTxt: {fileID: 0}
-  goalTxt: {fileID: 0}
+  pointsTxt: {fileID: 352761543}
+  movesTxt: {fileID: 2008084823}
+  goalTxt: {fileID: 1691355835}
 --- !u!4 &1076215350
 Transform:
   m_ObjectHideFlags: 0
