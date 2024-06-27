@@ -3705,8 +3705,7 @@ MonoBehaviour:
   - speakerName: Kepala Desa
     dialogText: Baik nak sama-sama.
   objActive: []
-  objNonActive:
-  - {fileID: 1529745398}
+  objNonActive: []
 --- !u!1 &1547367168
 GameObject:
   m_ObjectHideFlags: 0
