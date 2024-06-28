@@ -2,12 +2,10 @@ using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
 
-public class DisplayTaskDay3 : MonoBehaviour
+public class DisplayTaskDay4 : MonoBehaviour
 {
     public TMP_Text dialogCounterDisplay;
-    public TMP_Text puzzWinDisplay;
-    public GameObject nextTaskDisplay1;
-    public GameObject nextTaskDisplay2;
+    public GameObject nextTaskDisplay;
     public List<GameObject> objActive;
     public List<GameObject> objNonActive;
 
@@ -15,16 +13,14 @@ public class DisplayTaskDay3 : MonoBehaviour
     void Start()
     {
         //UpdateDisplayText();
-        nextTaskDisplay1.SetActive(false);
-        nextTaskDisplay2.SetActive(false);
+        nextTaskDisplay.SetActive(false);
     }
 
     void Update()
     {
         UpdateDisplayText();
-        UpdateDispayPuzz();
-        
-        if(DialogCompletionCounter.dialogCount>=3 && PuzzleData.CurrentWin>=3)
+
+        if(DialogCompletionCounter.dialogCount>=1)
         {
             foreach (var obj in objActive)
             {
@@ -45,20 +41,9 @@ public class DisplayTaskDay3 : MonoBehaviour
         if(DialogCompletionCounter.dialogCount>=1)
         {
             currentDialogCount=1;
-            nextTaskDisplay1.SetActive(true);
+            nextTaskDisplay.SetActive(true);
         }
         dialogCounterDisplay.text = $"{currentDialogCount}/{maxDialogCount}";
     }
 
-    public void UpdateDispayPuzz()
-    {
-        int currentWinPuzz = PuzzleData.CurrentWin;
-        int maxWinPuzz = 1;
-        if(currentWinPuzz >=1)
-        {
-            currentWinPuzz=1;
-            nextTaskDisplay2.SetActive(true);
-        }
-        puzzWinDisplay.text = $"{currentWinPuzz}/{maxWinPuzz}";
-    }
 }
