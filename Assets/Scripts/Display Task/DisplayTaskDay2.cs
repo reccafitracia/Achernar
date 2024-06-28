@@ -6,6 +6,8 @@ public class DisplayTaskDay2 : MonoBehaviour
 {
     public TMP_Text dialogCounterDisplay;
     public TMP_Text puzzWinDisplay;
+    public GameObject nextTaskDisplay1;
+    public GameObject nextTaskDisplay2;
     public List<GameObject> objActive;
     public List<GameObject> objNonActive;
 
@@ -13,6 +15,8 @@ public class DisplayTaskDay2 : MonoBehaviour
     void Start()
     {
         //UpdateDisplayText();
+        nextTaskDisplay1.SetActive(false);
+        nextTaskDisplay2.SetActive(false);
     }
 
     void Update()
@@ -41,6 +45,7 @@ public class DisplayTaskDay2 : MonoBehaviour
         if(DialogCompletionCounter.dialogCount>=3)
         {
             currentDialogCount=3;
+            nextTaskDisplay1.SetActive(true);
         }
         dialogCounterDisplay.text = $"{currentDialogCount}/{maxDialogCount}";
     }
@@ -52,6 +57,7 @@ public class DisplayTaskDay2 : MonoBehaviour
         if(currentWinPuzz >=3)
         {
             currentWinPuzz=3;
+            nextTaskDisplay2.SetActive(true);
         }
         puzzWinDisplay.text = $"{currentWinPuzz}/{maxWinPuzz}";
     }

@@ -31,6 +31,14 @@ public class DialogManager : MonoBehaviour
     {
         continueButton.onClick.AddListener(DisplayNextSentence);
     }
+    
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
+    }
 
     public void StartDialog(Dialog[] dialogArray, System.Action onDialogComplete = null)
     {

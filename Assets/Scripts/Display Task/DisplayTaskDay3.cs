@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class DisplayTaskDay3 : MonoBehaviour
 {
     public TMP_Text dialogCounterDisplay;
+    public GameObject nextTaskDisplay;
     public List<GameObject> objActive;
     public List<GameObject> objNonActive;
 
@@ -12,6 +13,7 @@ public class DisplayTaskDay3 : MonoBehaviour
     void Start()
     {
         //UpdateDisplayText();
+        nextTaskDisplay.SetActive(false);
     }
 
     void Update()
@@ -39,6 +41,7 @@ public class DisplayTaskDay3 : MonoBehaviour
         if(DialogCompletionCounter.dialogCount>=1)
         {
             currentDialogCount=1;
+            nextTaskDisplay.SetActive(true);
         }
         dialogCounterDisplay.text = $"{currentDialogCount}/{maxDialogCount}";
     }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DisplayTaskDay1 : MonoBehaviour
 {
     public TMP_Text dialogCounterDisplay;
+    public GameObject nextTaskDisplay;
     public List<GameObject> objActive;
     public List<GameObject> objNonActive;
 
@@ -13,6 +14,7 @@ public class DisplayTaskDay1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nextTaskDisplay.SetActive(false);
         //UpdateDisplayText();
     }
 
@@ -40,6 +42,7 @@ public class DisplayTaskDay1 : MonoBehaviour
         if(DialogCompletionCounter.dialogCount>=5)
         {
             currentDialogCount=5;
+            nextTaskDisplay.SetActive(true);
         }
         dialogCounterDisplay.text = $"{currentDialogCount}/{maxDialogCount}";
     }
